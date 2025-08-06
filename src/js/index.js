@@ -1,6 +1,24 @@
-// SVG Path
-const path = document.querySelectorAll('.text-animation svg path');
+const cta = document.querySelector('.cta');
+const openingMsg = document.querySelector('.message');
+const playSertaMulia = document.querySelector('#sertamulia');
+const pageJumbotron = document.querySelector('#jumbotron');
+cta.addEventListener('click',()=> {
+   playLaguSertaMuliaSegment();
+   openingMsg.classList.add('active');
+   pageJumbotron.style.display = 'block';
+   pageJumbotron.style.height = '100vh';
+})
 
-path.forEach(element => {
-   console.info(`letter ${element} is ${element.getTotalLength()}`);
-});
+// Function Lagu Serta Mulia Di Mulai
+function playLaguSertaMuliaSegment() {
+   playSertaMulia.currentTime = 117;
+   playSertaMulia.play();
+   const stopAt = 248;
+   function onTimeUpdate() {
+      if (playSertaMulia.currentTime >= stopAt) {
+         playSertaMulia.pause();
+         playSertaMulia.removeEventListener('timeupdate', onTimeUpdate);
+      }
+   }
+   playSertaMulia.addEventListener('timeupdate', onTimeUpdate);
+}
