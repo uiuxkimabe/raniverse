@@ -6,6 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: light-dark(#333, var(--secondary-color));
+    font-family: 'General Sans', sans-serif;
 }
 
 :root {
