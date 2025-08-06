@@ -2,6 +2,7 @@ const cta = document.querySelector('.cta');
 const openingMsg = document.querySelector('.message');
 const playSertaMulia = document.querySelector('#sertamulia');
 const nextBtntoJumbotron = document.querySelector('main .message figcaption a');
+const openingVideo = document.querySelector('main .message video')
 const pageJumbotron = document.querySelector('#jumbotron');
 cta.addEventListener('click',()=> {
    playLaguSertaMuliaSegment();
@@ -12,6 +13,8 @@ cta.addEventListener('click',()=> {
       pageJumbotron.style.display = 'block';
       pageJumbotron.style.height = '100vh';
       nextBtntoJumbotron.style.display = 'block';
+      openingJumbotron.pause();
+      openingJumbotron.removeAttribute('autoplay');
    }, 65000);
 })
 
