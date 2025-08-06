@@ -13,8 +13,8 @@ cta.addEventListener('click',()=> {
       pageJumbotron.style.display = 'block';
       pageJumbotron.style.height = '100vh';
       nextBtntoJumbotron.style.display = 'block';
-      openingJumbotron.pause();
-      openingJumbotron.removeAttribute('autoplay');
+      openingVideo.removeAttribute('autoplay');
+      openingVideo.pause();
    }, 65000);
 })
 
