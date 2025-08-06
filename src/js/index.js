@@ -5,6 +5,7 @@ const pageJumbotron = document.querySelector('#jumbotron');
 cta.addEventListener('click',()=> {
    playLaguSertaMuliaSegment();
    openingMsg.classList.add('active');
+   openingMsg.style.width = "100%"
    pageJumbotron.style.display = 'block';
    pageJumbotron.style.height = '100vh';
 })
