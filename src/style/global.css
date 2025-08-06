@@ -1,0 +1,136 @@
+/*? global clearing */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: light-dark(#333, var(--secondary-color));
+}
+
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #f0f0f0;
+    --accent-color: #ff5722;
+    --text-color: #333;
+    color-scheme: light dark;
+    /* Display */
+    --d-flex: flex;
+    --d-grid: grid;
+}
+
+/* Default Display */
+
+.d-flex {
+    display: var(--d-flex);
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main .text-animation {
+    height: 100%;
+    text-align: center;
+    position relative;
+}
+
+main .text-animation p {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: textOpacity .5s ease forwards 4.5s;
+}
+
+@keyframes textAnimate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes textFill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: var(--secondary-color);
+    }
+}
+
+@keyframes textOpacity {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+main .text-animation svg {
+    margin: 1em auto;
+    animation: textFill 1s ease forwards 4s;
+}
+
+main .text-animation svg path:first-child {
+    /* huruf r */
+    stroke-dashoffset: 277;
+    stroke-dasharray: 277;
+    animation: textAnimate 2s ease forwards
+}
+
+main .text-animation svg path:nth-child(2) {
+    /* huruf a */
+    stroke-dashoffset: 239;
+    stroke-dasharray: 239;
+    animation: textAnimate 2s ease forwards .5s
+}
+
+main .text-animation svg path:nth-child(3) {
+    /* huruf n */
+    stroke-dashoffset: 301;
+    stroke-dasharray: 301;
+    animation: textAnimate 2s ease forwards 1s;
+}
+
+main .text-animation svg path:nth-child(4) {
+    /* huruf i */
+    stroke-dashoffset: 138;
+    stroke-dasharray: 138;
+    animation: textAnimate 2s ease forwards 1.5s;
+}
+
+main .text-animation svg path:nth-child(5) {
+    /* huruf a */
+    stroke-dashoffset: 239;
+    stroke-dasharray: 239;
+    animation: textAnimate 2s ease forwards 2s;
+}
+
+main .text-animation svg path:last-child {
+    /* huruf h */
+    stroke-dashoffset: 291;
+    stroke-dasharray: 291;
+    animation: textAnimate 2s ease forwards 2.5s;
+}
+
+main .text-animation .cta {
+    padding: .5em 1em;
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    float: right;
+    transform: translateY(50%);
+    opacity: 0;
+    animation: textOpacity .5s ease forwards 4.5s;
+}
