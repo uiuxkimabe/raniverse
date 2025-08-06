@@ -176,22 +176,33 @@ main .message.active {
 main .message figcaption {
     display: inline-block;
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--secondary-color);
+    background-color: rgba(17, 19, 18, 0.7);
     padding: 1em;
 }
 
 main .message .text {
-    color: black;
+    color: white;
     line-height: 2em;
-    width: 100%;
+    width: 0;
     white-space: nowrap;
     overflow: hidden;
-    background: var(--secondary-color);
-    border-radius: 4px;
     font-size: .9rem;
+}
+
+main .message figcaption a {
+    display: none;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px 0;
+    float: right;
+    font-size: .8rem;
+    background: rgb(29, 71, 161);
+    color: var(--secondary-color);
 }
 
 main .message p:first-child {

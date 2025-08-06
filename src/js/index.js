@@ -1,13 +1,18 @@
 const cta = document.querySelector('.cta');
 const openingMsg = document.querySelector('.message');
 const playSertaMulia = document.querySelector('#sertamulia');
+const nextBtntoJumbotron = document.querySelector('main .message figcaption a');
 const pageJumbotron = document.querySelector('#jumbotron');
 cta.addEventListener('click',()=> {
    playLaguSertaMuliaSegment();
    openingMsg.classList.add('active');
-   openingMsg.style.width = "100%"
-   pageJumbotron.style.display = 'block';
-   pageJumbotron.style.height = '100vh';
+   openingMsg.style.width = "100%";
+   openingMsg.style.height = "100%";
+   setTimeout(() => {
+      pageJumbotron.style.display = 'block';
+      pageJumbotron.style.height = '100vh';
+      nextBtntoJumbotron.style.display = 'block';
+   }, 65000);
 })
 
 // Function Lagu Serta Mulia Di Mulai
