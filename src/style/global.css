@@ -22,6 +22,13 @@ body {
     --d-grid: grid;
 }
 
+.container {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    
+}
+
 /* Default Display */
 
 .d-flex {
@@ -33,9 +40,14 @@ body {
 /* Main */
 
 main {
+    width: 100%;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: none;
 }
 
 main::after {
@@ -49,7 +61,7 @@ main::after {
     z-index: -1;
 }
 
-main video {
+main .video-background {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -153,88 +165,12 @@ main .text-animation .cta {
     animation: textOpacity .5s ease forwards 4.5s;
 }
 
-main .message {
-    width: 70%;
-    height: 90%;
-    position: absolute;
-    bottom: -50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: var(--secondary-color);
-    padding: 1em;
-    overflow: hidden;
+main.active {
+    animation: showJumbotron .5s ease forwards;
 }
 
-main .message video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main .message.active {
-    animation: activeMsg .5s ease forwards;
-}
-
-main .message figcaption {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(17, 19, 18, 0.7);
-    padding: 1em;
-}
-
-main .message .text {
-    color: white;
-    line-height: 2em;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: .9rem;
-}
-
-main .message figcaption a {
-    display: none;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px;
-    margin: 10px 0;
-    float: right;
-    font-size: .8rem;
-    background: rgb(29, 71, 161);
-    color: var(--secondary-color);
-}
-
-main .message p:first-child {
-    animation: typing 2s steps(52) forwards 10s;
-}
-
-main .message p:nth-child(2) {
-    animation: typing 2s steps(52) forwards 13s;
-}
-
-main .message p:nth-child(3) {
-    animation: typing 2s steps(20) forwards 16s;
-}
-
-@keyframes activeMsg {
-    50% {
-        bottom: 80%;
-    }
-    100% {
-        bottom: 50%
-    }
-}
-
-@keyframes typing {
-    from {
-       width: 0; 
-    }
-    to {
-       width: 100%; 
-    }
+@keyframes showJumbotron {
+    to {transform: translateY(-100%);}
 }
 
 /* End Main */
@@ -242,12 +178,32 @@ main .message p:nth-child(3) {
 /* Jumbotron */
 
 #jumbotron {
-    display: none;
+    /* display: none; */
     position: relative;
+    overflow: hidden;
     width: 100%;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../assets/stars.jpg) no-repeat center center/cover;
+    height: 100vh;
+    background: black;
+    color: var(--secondary-color);
+    transition: .5s ease-in-out;
 }
+
+#jumbotron video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    filter:grayscale(50);
+}
+
+#jumbotron figcaption {
+    padding: 1em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
