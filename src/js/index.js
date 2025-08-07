@@ -8,13 +8,13 @@ cta.addEventListener('click',()=> {
    playLaguSertaMuliaSegment();
    openingMsg.classList.add('active');
    openingMsg.style.width = "100%";
-   openingMsg.style.height = "100%";
+   openingMsg.style.height = "90%";
    setTimeout(() => {
       pageJumbotron.style.display = 'block';
       pageJumbotron.style.height = '100vh';
       nextBtntoJumbotron.style.display = 'block';
-      openingVideo.removeAttribute('autoplay');
-      openingVideo.pause();
+      // openingVideo.removeAttribute('autoplay');
+      // openingVideo.pause();
    }, 65000);
 })
 
