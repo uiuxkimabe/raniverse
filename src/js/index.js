@@ -12,7 +12,7 @@ cta.addEventListener('click',()=> {
    }, 2000);
    setTimeout(() => {
       ctaNext.style.display = 'block';
-      about.style.display = 'flex';
+      about.style.display = 'block';
    }, 65000);
    
 })

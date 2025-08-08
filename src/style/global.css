@@ -51,7 +51,7 @@ main {
     left: 0;
     top: 0;
     z-index: 1;
-    display: none;
+    /* display: none; */
 }
 
 main::after {
@@ -182,7 +182,7 @@ main.active {
 /* Jumbotron */
 
 #jumbotron {
-    /* display: none; */
+    display: none;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -296,7 +296,7 @@ main.active {
     text-align: center;
     width: 100%;
     height: 100vh;
-    display: block;
+    display: none;
     background: url(../assets/stars.jpg) no-repeat center center fixed;
     background-size: 200%;
     animation: fadeIn 25s ease-in-out alternate infinite;
@@ -305,7 +305,6 @@ main.active {
 @keyframes fadeIn {
     to { 
         background-size: 100%;
-        transform: rotate(360deg);
     }
 }
 
