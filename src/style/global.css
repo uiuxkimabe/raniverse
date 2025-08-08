@@ -201,11 +201,13 @@ main.active {
 #jumbotron figcaption {
     padding: 1em;
     position:absolute;
-    top: 50%;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
     z-index: 1;
     overflow: hidden;
+    animation: bgColor 3s ease forwards 27s;
+    
 }
 
 .text {
@@ -254,6 +256,16 @@ main.active {
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
+}
+
+@keyframes bgColor {
+    to {
+        background-color: rgba(0,0,0,.4);
+        padding: 1em;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
 }
 
 /* End Jumbotron */
