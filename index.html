@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
     <!-- Font Google Share -->
      <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
+     <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
@@ -69,7 +71,32 @@
     <!-- Section About -->
 
     <section id="about">
-
+         <audio src="./src/assets/Serta Mulia.mp3" id="sertamulia"></audio>
+        <div class="container">
+            <div class="row">
+                <div class="col" data-aos="fade-down" data-aos-delay="100">
+                    <h1>Welcome to <span class="mark">Raniverse</span></h1>
+                    <p data-aos="fade-up" data-aos-delay="200">A universe where we celebrate your 20th birthday</p>
+                </div>
+            </div>
+            <div class="row infinite-slider d-grid">
+                <div class="col d-flex">
+                    <div class="img">
+                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="img">
+                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="img">
+                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="img">
+                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    </div> 
+                </div>
+    
+            </div>
+        </div>
     </section>
 
     <!-- Ens Section About -->
@@ -77,5 +104,10 @@
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
     <script src="./src/js/vanilla-tilt.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
