@@ -13,7 +13,7 @@ cta.addEventListener('click',()=> {
    setTimeout(() => {
       ctaNext.style.display = 'block';
       about.style.display = 'block';
-   }, 10000);
+   }, 1000);
    
 })
 
@@ -72,4 +72,4 @@ function startConfetti() {
 
 ctaNext.addEventListener('click', () => {
    startConfetti();
-}
+})
