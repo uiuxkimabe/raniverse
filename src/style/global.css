@@ -205,5 +205,68 @@ main.active {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    overflow: hidden;
 }
 
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+.text:first-child {
+    animation: typing 2s steps(30, end) forwards;
+}
+
+.text:nth-child(2) {
+    animation: typing 2s steps(30, end) forwards 3s;
+}
+
+.text:nth-child(3) {
+    animation: typing 2s steps(30, end) forwards 6s;
+}
+
+.text:nth-child(4) {
+    animation: typing 2s steps(30, end) forwards 9s;
+}
+
+.text:nth-child(5) {
+    animation: typing 2s steps(30, end) forwards 12s;
+}
+
+.text:nth-child(6) {
+    animation: typing 2s steps(30, end) forwards 15s;
+}
+
+.text:nth-child(7) {
+    animation: typing 2s steps(30, end) forwards 18s;
+}
+
+.text:nth-child(8) {
+    animation: typing 2s steps(30, end) forwards 21s;
+}
+
+.text:nth-child(9) {
+    animation: typing 2s steps(30, end) forwards 24s;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* End Jumbotron */
+
+/* Section About */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+/* End Section About */
