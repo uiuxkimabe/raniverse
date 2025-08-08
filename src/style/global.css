@@ -30,7 +30,6 @@ body {
 
 .row {
     width: 100%;
-    height: 100%;
 }
 
 /* Default Display */
@@ -51,7 +50,7 @@ main {
     left: 0;
     top: 0;
     z-index: 1;
-    /* display: none; */
+    display: none;
 }
 
 main::after {
@@ -182,7 +181,7 @@ main.active {
 /* Jumbotron */
 
 #jumbotron {
-    display: none;
+    /* display: none; */
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -296,16 +295,7 @@ main.active {
     text-align: center;
     width: 100%;
     height: 100vh;
-    display: none;
-    background: url(../assets/stars.jpg) no-repeat center center fixed;
-    background-size: 200%;
-    animation: fadeIn 25s ease-in-out alternate infinite;
-}
-
-@keyframes fadeIn {
-    to { 
-        background-size: 100%;
-    }
+    /* display: none; */
 }
 
 #about .mark {
@@ -317,17 +307,43 @@ main.active {
     font-size: 3vmax;
 }
 
-.infinite-slider .img {
-    width: 200px;
-    height: 150px;
-    border-radius: 8px;
+.carousel {
+    margin: 2em auto;
+    width: 70%;
+    flex: 0 0 100%;
     overflow: hidden;
+    /* border: 1px solid whit/e; */
 }
 
-.infinite-slider .img img {
+.carousel .card {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.carousel .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.group {
+    gap: 20px;
+    padding-right: 20px;
+    will-change: transform;
+    animation: scrollingtoleft 15s linear infinite;
+}
+
+
+@keyframes scrollingtoleft {
+    from { 
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 
 /* End Section About */

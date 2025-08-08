@@ -13,6 +13,8 @@
      <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
      <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Confetti -->
+     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </head>
 <body>
     
@@ -74,27 +76,40 @@
          <audio src="./src/assets/Serta Mulia.mp3" id="sertamulia"></audio>
         <div class="container">
             <div class="row">
-                <div class="col" data-aos="fade-down" data-aos-delay="100">
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
                     <h1>Welcome to <span class="mark">Raniverse</span></h1>
                     <p data-aos="fade-up" data-aos-delay="200">A universe where we celebrate your 20th birthday</p>
                 </div>
             </div>
-            <div class="row infinite-slider d-grid">
-                <div class="col d-flex">
-                    <div class="img">
+            <div class="row carousel d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="group d-flex">
+                    <div class="card">
                         <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
                     </div>
-                    <div class="img">
-                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276508.jpg" alt="Raniah Nurfadilah">
                     </div>
-                    <div class="img">
-                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276500.jpg" alt="Raniah Nurfadilah">
                     </div>
-                    <div class="img">
-                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
-                    </div> 
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276516.jpg" alt="Raniah Nurfadilah">
+                    </div>
                 </div>
-    
+                <div aria-hidden class="group d-flex">
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276492.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276508.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276500.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                    <div class="card">
+                        <img src="./src/assets/myuniverse/1754672276516.jpg" alt="Raniah Nurfadilah">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
