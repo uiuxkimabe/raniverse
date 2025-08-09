@@ -13,8 +13,7 @@ cta.addEventListener('click',()=> {
    setTimeout(() => {
       ctaNext.style.display = 'block';
       about.style.display = 'block';
-   }, 1000);
-   
+   }, 6000);
 })
 
 // Function Lagu Serta Mulia Di Mulai
