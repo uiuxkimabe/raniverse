@@ -200,6 +200,9 @@ ctaNext.addEventListener('click', () => {
 ctaPesan.addEventListener('click',()=> {
   const pesanShow = document.querySelector('.pesanPenting');
   pesanShow.style.height = "100vh";
+  resultRamal.style.display = 'none';
+  mainOpen.style.display = 'none';
+  ctaPesan.style.display = 'none';
   setTimeout(() => {
     typing()
   }, 1000);
