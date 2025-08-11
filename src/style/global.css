@@ -40,6 +40,13 @@ body {
     align-items: center;
 }
 
+.d-grid {
+    display: var(--d-grid);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    justify-content: center;
+}
+
 /* Main */
 
 main {
@@ -294,7 +301,8 @@ main.active {
     padding: 2em 0;
     text-align: center;
     width: 100%;
-    /* height: 100  vh; */
+    background: url(../assets/stars.jpg) no-repeat center fixed;
+    background-size: cover;
     display: none;
 }
 
@@ -388,6 +396,7 @@ main.active {
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
+  background: rgba(0, 0, 1, 0.616)
 }
 
 .hasil-ramal .col img {
@@ -421,5 +430,23 @@ main.active {
 }
 
 /* End Part Ramal */
+
+/* Part typing message */
+
+.cta-pesan {
+    padding: .5em 1em;
+    font-weight: 500;
+    font-size: 1em;
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    transform: translateY(50%);
+    opacity: 0;
+    animation: textOpacity .5s ease forwards 4.5s;
+}
+
+.pesanPenting {
+    width: 100vh;
+}
 
 /* End Section About */

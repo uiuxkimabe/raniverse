@@ -1,5 +1,6 @@
 const cta = document.querySelector('.cta');
 const playSertaMulia = document.querySelector('#sertamulia');
+const playYasudah = document.querySelector('#yasudah');
 const mainOpen = document.querySelector('main');
 const jumbotron = document.querySelector('#jumbotron');
 const ctaNext = document.querySelector('.cta-next');
@@ -183,4 +184,9 @@ btnRamal.addEventListener("click", () => {
   resultRamal.style.height = "300px";
   btnRamal.style.display = "none";
   pilihan(ask1, ask2, ask3);
+});
+
+// Klik CTA Next
+ctaNext.addEventListener('click', () => {
+   playYasudah.play()
 });
