@@ -294,7 +294,7 @@ main.active {
     padding: 2em 0;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    /* height: 100  vh; */
     display: none;
 }
 
@@ -345,5 +345,81 @@ main.active {
     }
 }
 
+/* Part Ramal */
+
+
+.head-game {
+  margin: 2em 0;
+}
+
+.btn-ramal {
+    margin: 1em auto;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    padding: .5em 1em;
+    font-weight: 700;
+    font-size: 1em;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+}
+
+
+.hasil-ramal {
+  margin: 2em 0;
+  height: 0;
+  text-align: left;
+  overflow-x: scroll;
+  justify-content: space-evenly;
+  gap: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.hasil-ramal::-webkit-scrollbar {
+  display: none;
+}
+
+.hasil-ramal .col {
+  flex: 0 0 300px;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.hasil-ramal .col img {
+    width: 20px;
+    height: 20px;
+    margin: 0 .5em;
+    filter: brightness(0) invert(1);
+}
+
+.hasil-ramal .head-content {
+  justify-content: space-between !important;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  margin-bottom: 1em;
+}
+
+.hasil-ramal .content-tarot {
+  font-size: 0.8rem;
+  overflow-y: scroll;
+  height: 180px;
+  display: none;
+  justify-content: justify;
+}
+
+.hasil-ramal .content-tarot p {
+  font-family: var(--poppins);
+}
+
+.hasil-ramal .content-tarot::-webkit-scrollbar {
+  display: none;
+}
+
+/* End Part Ramal */
 
 /* End Section About */
