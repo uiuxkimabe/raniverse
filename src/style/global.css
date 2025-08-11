@@ -434,19 +434,35 @@ main.active {
 /* Part typing message */
 
 .cta-pesan {
+    display: none;
+    margin: 1em auto;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
     padding: .5em 1em;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1em;
-    background: transparent;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    transform: translateY(50%);
-    opacity: 0;
-    animation: textOpacity .5s ease forwards 4.5s;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.cta-to-universe {
+    display: none;
+    margin: 1em auto;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    padding: .5em 1em;
+    font-weight: 700;
+    font-size: 1em;
+    background: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .pesanPenting {
-    width: 100vh;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
 }
 
 /* End Section About */
