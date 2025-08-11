@@ -197,15 +197,18 @@ ctaNext.addEventListener('click', () => {
    }, 60000);
 });
 
+const pesanShow = document.querySelector('.pesanPenting');
+const highlight = document.querySelector('.highlight');
+const carousel = document.querySelector('.carousel');
 ctaPesan.addEventListener('click',()=> {
-  const pesanShow = document.querySelector('.pesanPenting');
-  pesanShow.style.height = "100vh";
+  highlight.style.display = 'none';
+  carousel.style.display = 'none';
   resultRamal.style.display = 'none';
-  mainOpen.style.display = 'none';
+  pesanShow.style.height = "100vh";
   ctaPesan.style.display = 'none';
   setTimeout(() => {
     typing()
-  }, 1000);
+  }, 3000);
 })
 
 const typingElement = document.querySelector('span#element');
