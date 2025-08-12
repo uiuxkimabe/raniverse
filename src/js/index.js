@@ -197,6 +197,9 @@ ctaNext.addEventListener('click', () => {
       ctaPesan.style.display = 'block';
       ctaNext.style.display = 'none';
    }, 73000);
+   setTimeout(() => {
+    ctaUniverse.style.display = 'block';
+  }, 248000);
 });
 
 const pesanShow = document.querySelector('.pesanPenting');
@@ -216,9 +219,6 @@ ctaPesan.addEventListener('click',()=> {
   setTimeout(() => {
     typing()
   }, 1000);
-  setTimeout(() => {
-    ctaUniverse.style.display = 'block';
-  }, 240000);
 })
 
 const typingElement = document.querySelector('span#element');
