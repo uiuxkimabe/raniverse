@@ -218,7 +218,7 @@ ctaPesan.addEventListener('click',()=> {
   }, 1000);
   setTimeout(() => {
     ctaUniverse.style.display = 'block';
-  }, 68000);
+  }, 240000);
 })
 
 const typingElement = document.querySelector('span#element');
