@@ -214,14 +214,17 @@ ctaPesan.addEventListener('click',()=> {
   ctaPesan.style.display = 'none';
   setTimeout(() => {
     typing()
-  }, 3000);
+  }, 2000);
+  setTimeout(() => {
+    ctaUniverse.style.display = 'block';
+  }, 249000);
 })
 
 const typingElement = document.querySelector('span#element');
 // Function typing
 function typing() {
     let typed = new Typed('#element', {
-        strings: ['<i>Hei ran.., how was your day ??</i>','<i>Kamu Baik - baik aja kan ?</i>',' <i>1 tahun ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20</i>','<i>Congratulation ya..</i>','<i>Btw perkiraan kiki bener kan ?, ga salah kayak taun lalu 😂</i>','<i>Ran..., sehat sehat yaa !<i/>','<i>Makasih udah hidup dengan baik</i>','<i>Makasih udah selalu sabar, selalu kuat</i>','<i>Proud of you !!!</i>','<i>Ran....</i>','<i>Kalo suatu saat lagi ngerasa kecewa sama banyak hal</i>','<i>Mungkin, rani bisa inget hal ini !</i>','<i>Suatu saat, kalo ketika Rani bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa itu dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat selain alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>','<i> dan kadang yang bikin kecukupan rejeki, kesehatan bukan karna usaha kita siang malem."</i>','<i>Bisa jadi karna cara kita nerima semua hal yang ga enak, tanpa  drama tanpa bales dendam</i>','Itu ga gampang, tapi disitu justru letak kuatnya kamu','Semesta tuh suka sama orang yang hatinya lapang yang fokus gimana caranya untuk tetap tenang', 'Kelimpahan, kesehatan, ketenangan itu datang ke hati orang yang udah siap menerima','Bukan ke hati yang sibuk untuk diakuin sama dunia','Omongan ini mungkin ngaco, tapi mungkin suatu saat ada manfaatnya','Intinya... semoga Rani selalu bahagia dan dekat dengan hal - hal yang menyenangkan hati','Maaf udah terlalu panjang lebar, terlalu ganggu dan bikin risih ya Ran...','In The End, love you to the pluto and back.'],
+        strings: ['<i>Hei ran.., how was your day ??</i>','<i>Kamu Baik - baik aja kan ?</i>',' <i>1 tahun ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20</i>','<i>Congratulation ya..</i>','<i>Btw perkiraan kiki bener kan ?, ga salah kayak taun lalu 😂</i>','<i>Ran..., sehat sehat yaa !<i/>','<i>Makasih udah hidup dengan baik</i>','<i>Makasih udah selalu sabar, selalu kuat</i>','<i>Proud of you !!!</i>','<i>Ran....</i>','<i>Kalo suatu saat lagi ngerasa kecewa sama banyak hal</i>','<i>Mungkin, rani bisa inget yang satu ini !</i>','<i>Suatu saat, ketika Rani bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa itu dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat selain alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>','<i> dan kadang yang bikin kecukupan rejeki, kesehatan bukan karna usaha kita siang malem</i>','<i>Bisa jadi karna cara kita nerima semua hal yang ga enak, tanpa  drama, tanpa bales dendam</i>','Itu ga gampang, tapi disitu justru letak kuatnya kamu','Semesta tuh suka sama orang yang hatinya lapang yang fokus gimana caranya untuk tetap tenang', 'Omongan ini mungkin ngaco, Maafin yaa...','Intinya... semoga Rani selalu bahagia dan dekat dengan hal - hal yang menyenangkan hati','Maaf udah terlalu panjang lebar, terlalu ganggu dan bikin risih ya Ran...','In The End, love you to the pluto and back.'],
         typeSpeed: 40,
         fadeOut: true,
         // loop: true,
