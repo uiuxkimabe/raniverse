@@ -14,7 +14,7 @@ cta.addEventListener('click',()=> {
    }, 2000);
    setTimeout(() => {
       ctaNext.style.display = 'block';
-      about.style.display = 'block';
+      
    }, 66000);
 })
 
@@ -73,6 +73,7 @@ function startConfetti() {
 
 ctaNext.addEventListener('click', () => {
    startConfetti();
+   about.style.display = 'block';
 })
 
 // Part Ramal
@@ -195,7 +196,7 @@ ctaNext.addEventListener('click', () => {
    setTimeout(() => {
       ctaPesan.style.display = 'block';
       ctaNext.style.display = 'none';
-   }, 70000);
+   }, 73000);
 });
 
 const pesanShow = document.querySelector('.pesanPenting');
