@@ -460,10 +460,6 @@ body {
 }
 
 .pesanPenting {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
     height: 0;
     overflow: hidden;
     transition: .5s ease-in-out;

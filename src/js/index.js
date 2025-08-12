@@ -215,17 +215,17 @@ ctaPesan.addEventListener('click',()=> {
   ctaPesan.style.display = 'none';
   setTimeout(() => {
     typing()
-  }, 2000);
+  }, 1000);
   setTimeout(() => {
     ctaUniverse.style.display = 'block';
-  }, 249000);
+  }, 68000);
 })
 
 const typingElement = document.querySelector('span#element');
 // Function typing
 function typing() {
     let typed = new Typed('#element', {
-        strings: ['<i>Hei ran.., how was your day ?</i>','<i>1 tahun ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20</i>','<i>Congratulation ya..</i>','<i>Btw perkiraan kiki bener kan ?, ga salah kayak taun lalu 😂</i>','<i>Ran..., sehat sehat yaa !<i/>','<i>Makasih udah hidup dengan baik</i>','<i>Makasih udah selalu sabar, selalu kuat</i>','<i>Proud of you Ran...</i>','<i>Kalo suatu saat lagi ngerasa kecewa sama dunia</i>','<i>Mungkin, rani bisa inget yang satu ini !</i>','<i>Suatu saat, ketika Rani bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa itu dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat sesuatu, kecuali alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>', 'Omongan ini mungkin berlebihan, Maafin yaa...','Intinya...= semoga Rani selalu bahagia dan dekat dengan hal - hal baik yang menyenangkan hati','Maaf udah terlalu panjang lebar, terlalu ganggu dan bikin risih ya Ran...','In The End, love you to the pluto and back.'],
+        strings: ['<i>Hei ran.., how was your day ?</i>','<i>1 tahun ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20</i>','<i>Congratulation ya..</i>','<i>Btw perkiraan kiki bener kan ?, ga salah kayak taun lalu 😂</i>','<i>Ran..., sehat sehat yaa !<i/>','<i>Makasih udah hidup dengan baik</i>','<i>Makasih udah selalu sabar, selalu kuat</i>','<i>Proud of you Ran...</i>','<i>Kalo suatu saat lagi ngerasa kecewa sama dunia</i>','<i>Mungkin, rani bisa inget yang satu ini !</i>','<i>Suatu saat, ketika Rani bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa itu dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat sesuatu, kecuali alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>', 'Omongan ini mungkin berlebihan, Maafin yaa...','Intinya... semoga Rani selalu bahagia dan dekat dengan hal - hal baik yang menyenangkan hati','Maaf udah terlalu panjang lebar, terlalu ganggu dan bikin risih ya Ran...','In The End, love you to the pluto and back.'],
         typeSpeed: 40,
         fadeOut: true,
         // loop: true,
