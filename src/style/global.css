@@ -49,7 +49,7 @@ body {
 
 /* Main */
 
-main {
+.main {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -60,7 +60,7 @@ main {
     /* display: none; */
 }
 
-main::after {
+.main::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -71,7 +71,7 @@ main::after {
     z-index: -1;
 }
 
-main .video-background {
+.main .video-background {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -81,13 +81,13 @@ main .video-background {
     z-index: -1;
 }
 
-main .text-animation {
+.main .text-animation {
     height: 100%;
     text-align: center;
     position: relative;
 }
 
-main .text-animation p {
+.main .text-animation p {
     transform: translateY(-50%);
     opacity: 0;
     animation: textOpacity .5s ease forwards 4.5s;
@@ -115,54 +115,54 @@ main .text-animation p {
     }
 }
 
-main .text-animation svg {
+.main .text-animation svg {
     margin: 1em auto;
     animation: textFill 1s ease forwards 4s;
 }
 
-main .text-animation svg path:first-child {
+.main .text-animation svg path:first-child {
     /* huruf r */
     stroke-dashoffset: 277;
     stroke-dasharray: 277;
     animation: textAnimate 2s ease forwards
 }
 
-main .text-animation svg path:nth-child(2) {
+.main .text-animation svg path:nth-child(2) {
     /* huruf a */
     stroke-dashoffset: 239;
     stroke-dasharray: 239;
     animation: textAnimate 2s ease forwards .5s
 }
 
-main .text-animation svg path:nth-child(3) {
+.main .text-animation svg path:nth-child(3) {
     /* huruf n */
     stroke-dashoffset: 301;
     stroke-dasharray: 301;
     animation: textAnimate 2s ease forwards 1s;
 }
 
-main .text-animation svg path:nth-child(4) {
+.main .text-animation svg path:nth-child(4) {
     /* huruf i */
     stroke-dashoffset: 138;
     stroke-dasharray: 138;
     animation: textAnimate 2s ease forwards 1.5s;
 }
 
-main .text-animation svg path:nth-child(5) {
+.main .text-animation svg path:nth-child(5) {
     /* huruf a */
     stroke-dashoffset: 239;
     stroke-dasharray: 239;
     animation: textAnimate 2s ease forwards 2s;
 }
 
-main .text-animation svg path:last-child {
+.main .text-animation svg path:last-child {
     /* huruf h */
     stroke-dashoffset: 291;
     stroke-dasharray: 291;
     animation: textAnimate 2s ease forwards 2.5s;
 }
 
-main .text-animation .cta {
+.main .text-animation .cta {
     padding: .5em 1em;
     font-weight: 500;
     font-size: 1em;
@@ -175,7 +175,7 @@ main .text-animation .cta {
     animation: textOpacity .5s ease forwards 4.5s;
 }
 
-main.active {
+.main.active {
     animation: showJumbotron .5s ease forwards;
 }
 

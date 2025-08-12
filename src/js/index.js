@@ -1,10 +1,11 @@
 const cta = document.querySelector('.cta');
 const playSertaMulia = document.querySelector('#sertamulia');
 const playYasudah = document.querySelector('#yasudah');
-const mainOpen = document.querySelector('main');
+const mainOpen = document.querySelector('.main');
 const jumbotron = document.querySelector('#jumbotron');
 const ctaNext = document.querySelector('.cta-next');
 const about = document.querySelector('#about');
+
 cta.addEventListener('click',()=> {
    mainOpen.classList.add('active')
    playLaguSertaMuliaSegment(117, 248);
@@ -194,18 +195,20 @@ ctaNext.addEventListener('click', () => {
    setTimeout(() => {
       ctaPesan.style.display = 'block';
       ctaNext.style.display = 'none';
-   }, 60000);
+   }, 70000);
 });
 
 const pesanShow = document.querySelector('.pesanPenting');
 const highlight = document.querySelector('.highlight');
 const carousel = document.querySelector('.carousel');
 const headGame = document.querySelector('.head-game');
+const whoIs = document.querySelector('.whois');
 ctaPesan.addEventListener('click',()=> {
-  mainOpen.style.display = 'none';
+  jumbotron.style.display = 'none';
   headGame.style.display = 'none';
   highlight.style.display = 'none';
   carousel.style.display = 'none';
+  whoIs.style.display = 'none';
   resultRamal.style.display = 'none';
   pesanShow.style.height = "100vh";
   ctaPesan.style.display = 'none';
@@ -218,7 +221,7 @@ const typingElement = document.querySelector('span#element');
 // Function typing
 function typing() {
     let typed = new Typed('#element', {
-        strings: ['<i>Hei ran.., how was your day ??</i>','<i>Baik - baik aja kan ?</i>',' <i>1 tahun lalu ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20 puluh</i>','<i>Rani udah dewasa 😭</i>','<i>Ran..., pasti sulit ya jadi Rani<i/>','<i>Apa ada banyak hal yang rani pikul ?</i>','<i>Kadang kiki lihat Rani senyum, tapi mata Rani engga</i>','<i>Mungkin karena itu, kiki berpikir gitu</i>','<i>Maaf kalo kiki sok tau, mungkin.. feeling aja.</i>','<i>Terlepas itu bener atau salah..</i>','<i>Rani sehat - sehat ya!</i>','<i>Boleh ya, kiki titip pesen buat Rani..</i>','<i>Ran.., kalo suatu saat Rani lagi ngerasa kecewa didunia</i>','<i>Mungkin Rani bisa inget ini</i>', '<i>Ketika kita bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa kita tuh dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat selain alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>','<i>kadang yang bikin kecukupan rejeki, kesehatan itu bukan karna usaha kita siang malem."</i>','<i>Bisa jadi karna cara kita nerima semua hal yang ga enak, tanpa  drama tanpa bales dendam</i>','<i>Mau dipandang jelek, macem macem tapi kita tetep diem, kita tetep jalan. tetep doain yang baik - baik.</i>','Itu ga gampang, tapi disitu justru letak kuatnya kamu','Semesta tuh suka sama orang yang hatinya lapang yang fokus gimana caranya untuk tetap tenang', 'Kelimpahan, kesehatan, ketenangan itu datang ke hati orang yang udah siap menerima','Bukan ke hati yang sibuk untuk diakuin sama dunia','Kamu lagi dilatih jadi wadah sama Allah, buat siap nerima','Dan kamu bakal kaget seindah apa hadiah yang bakalan Kamu terima.'],
+        strings: ['<i>Hei ran.., how was your day ??</i>','<i>Kamu Baik - baik aja kan ?</i>',' <i>1 tahun ga kerasa ya Ran..</i>','Tahun ini usia Rani udah 20</i>','<i>Congratulation ya..</i>','<i>Btw perkiraan kiki bener kan ?, ga salah kayak taun lalu 😂</i>','<i>Ran..., sehat sehat yaa !<i/>','<i>Makasih udah hidup dengan baik</i>','<i>Makasih udah selalu sabar, selalu kuat</i>','<i>Proud of you !!!</i>','<i>Ran....</i>','<i>Kalo suatu saat lagi ngerasa kecewa sama banyak hal</i>','<i>Mungkin, rani bisa inget hal ini !</i>','<i>Suatu saat, kalo ketika Rani bisa ikhlas, nerima kekecewaan idup.</i>','<i>Itu bisa jadi tanda Allah bakal bales tuntas rasa kecewa itu dengan beribu ribu kebaikan</i>','<i>Jadi kita perlu belajar ngerti kalo segala sesuatu yang baik buat kita, ga bakal Allah ijinin pergi kecuali bakal digantiin sama bentuk lain yang lebih baik lagi.</i>','<i>Allah ga menyegerakan atau memperlambat selain alasan keduanya pasti baik.</i>','<i>It really happen, for a good reason.</i>','<i> dan kadang yang bikin kecukupan rejeki, kesehatan bukan karna usaha kita siang malem."</i>','<i>Bisa jadi karna cara kita nerima semua hal yang ga enak, tanpa  drama tanpa bales dendam</i>','Itu ga gampang, tapi disitu justru letak kuatnya kamu','Semesta tuh suka sama orang yang hatinya lapang yang fokus gimana caranya untuk tetap tenang', 'Kelimpahan, kesehatan, ketenangan itu datang ke hati orang yang udah siap menerima','Bukan ke hati yang sibuk untuk diakuin sama dunia','Omongan ini mungkin ngaco, tapi mungkin suatu saat ada manfaatnya','Intinya... semoga Rani selalu bahagia dan dekat dengan hal - hal yang menyenangkan hati','Maaf udah terlalu panjang lebar, terlalu ganggu dan bikin risih ya Ran...','In The End, love you to the pluto and back.'],
         typeSpeed: 40,
         fadeOut: true,
         // loop: true,
