@@ -460,6 +460,8 @@ body {
 }
 
 .pesanPenting {
+    display: flex;
+    flex-wrap: wrap;
     height: 0;
     overflow: hidden;
     flex-direction: column;
@@ -467,5 +469,7 @@ body {
     align-items: center;
     transition: .5s ease-in-out;
 }
+
+
 
 /* End Section About */
